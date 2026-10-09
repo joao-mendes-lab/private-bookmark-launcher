@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Bookmark Launcher</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icon.svg" alt="" class="brand-icon">
+      <h1>Private Bookmark Launcher</h1>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search bookmarks by name or URL…" autocomplete="off">
+      <button id="clear-search" class="link-btn" title="Clear search">✕</button>
+    </div>
+    <div class="toolbar">
+      <button id="expand-all" class="ghost-btn">Expand all</button>
+      <button id="collapse-all" class="ghost-btn">Collapse all</button>
+    </div>
+  </header>
+
+  <div id="counter" class="counter">0 bookmarks selected</div>
+
+  <main id="tree" class="tree" aria-label="Bookmark tree"></main>
+
+  <div id="status" class="status" role="alert"></div>
+
+  <footer class="actions">
+    <button id="open-btn" class="primary-btn" disabled>Open selected</button>
+    <button id="clear-btn" class="ghost-btn">Clear selection</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
