@@ -2,7 +2,7 @@
 
 A Firefox extension for selecting bookmarks from nested folders and opening them as tabs in the current browser window.
 
-![Private Bookmark Launcher preview](screenshots/extension-preview.jpg)
+![Private Bookmark Launcher preview](extension-preview.jpg)
 
 
 
